@@ -4,3 +4,18 @@
 
 import React from 'react';
 import writinghook from 'writinghook.js';
+import PromptList from '../containers/PromptList.jsx';
+
+
+export default WritingContainer{
+
+  render() {
+    return (
+      <div className="PromptPage">
+        <PromtList/>
+
+      </div>
+    );
+  }
+
+}
