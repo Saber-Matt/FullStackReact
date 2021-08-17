@@ -1,19 +1,17 @@
 
-import { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import styles from './Header.css';
 
-export default Header {
+const Header = () => {
+  return (
+    <header>
+      <h1>Please Select your Writing Prompt</h1>
+      <Link to={'/'}>Home</Link>
+      <Link to={'/add'}>Add a Prompt, if you wish</Link>
+    </header>
 
-  render() {
-    return (
-      <Header className="Header">
-        <nav>
-        <NavLink to='/prompts'>Promts</NavLink>
-        <NavLink to='/prompts:id'>bleh</NavLink>
-       </nav>
-      </Header>
-    );
-  }
+  );
+};
 
-}
+export default Header;
